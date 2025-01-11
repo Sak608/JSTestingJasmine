@@ -23,3 +23,41 @@ const { add, subtract } = require('../src/calculator')
 
 // })
 
+describe('Calculator Testing', function () {
+    describe('Addition Testing', () => {
+
+        it('Adding two positive numbers', () => {
+            expect(add(100, 200)).toBe(300);
+        })
+
+        it('Adding two negative numbers', () => {
+            expect(add(-100, -200)).toBe(-300);
+        })
+
+        it('Adding one positive and one negative numbers', () => {
+            expect(add(100, -200)).toBe(-100);
+        })
+
+        it('Adding one negative and one positive numbers', () => {
+            expect(add(-100, 200)).toBe(100);
+        })
+    })
+
+    describe('Subtraction testing', () => {
+        it('Subtracting two positive numbers', () => {
+            expect(subtract(100, 200)).toBe(-100);
+        })
+
+        it('Subtracting two negative numbers', () => {
+            expect(subtract(-100, -200)).toBe(100);
+        })
+
+        it('Subtracting one positive and one negative numbers', () => {
+            expect(subtract(100, -200)).toBe(300);
+        })
+
+        it('Subtracting one negative and one positive numbers', () => {
+            expect(subtract(-100, 200)).toBe(-300);
+        })
+    })
+})
