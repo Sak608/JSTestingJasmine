@@ -1,0 +1,16 @@
+Install NodeJs project
+
+npm init --yes
+
+install jasmine
+
+npm install jasmine --save-dev
+
+Initialize the jasmine: npx jasmine init
+
+to test : npx jasmine
+
+Jasmine Matchers:
+toBe
+toEqual
+toBeNull and the list continues..
